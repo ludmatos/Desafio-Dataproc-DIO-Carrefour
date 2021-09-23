@@ -37,10 +37,16 @@ O desafio consiste em efetuar um processamento de dados utilizando o produto Dat
 ### Minha solução
 
 Um ambiente Jupyter Notebook foi utilizado na Google Cloud para praticar comandos no Spark e analisar o problema sugerido no desafio.
+
 Importei a biblioteca 're' para realizar operação de expressão regular, removendo os caracteres especais do texto, como ,.:! entre outros.
+
 Analisando a saída do código mais simplificado do instrutor do desafio, nota-se vários caracteres especiais junto de palavras formando um única string.
 Assim foi necessário usar a regex para correção.
+
 Todas as palavras foram transformadas para minúsculas, evitando erros de contangem.
+
 Foi aplicado um filtro para remover os espaços em branco da contagem, pois há mais de 1000 espaços inseridos no texto que são contados como palavras na ausência do filtro.
+
 Alguns comentários referentes a linhas específicas do código estão descritos no arquivo ```contador.py```.
+
 Diferentemente do ambiente do Jupyter Notebook, para o job rodar sem erro no cluster do GCS foi necessário definir a instância 'sc' explicitamente.
